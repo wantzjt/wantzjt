@@ -46,6 +46,20 @@ system-integrity checks.
 - [TARX organization](https://github.com/tarx-ai) — product, runtime, and public
   technical work
 
+## Upstream → product proof
+
+- **Inference reliability:** contributed a fail-fast, secret-safe route preflight
+  to [NVIDIA NemoClaw Community](https://github.com/NVIDIA/nemoclaw-community/pull/72),
+  then carried the operational contract into
+  [TARX CLI](https://github.com/tarx-ai/tarx-cli/pull/2), where it is merged and
+  tested against endpoint, authentication, model, provider, response, and
+  timeout failures.
+- **MCP interoperability:** turned four-client installer behavior into a
+  [host adapter fixture corpus](https://github.com/tarx-ai/tarx-cli/pull/3) for
+  Claude Desktop, Claude Code, Cursor, and VS Code, then contributed the
+  evidence to the active
+  [MCP configuration proposal](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2633#issuecomment-5109652384).
+
 ## Featured architecture: Palantir AIP × local-first AI
 
 [Palantir AIP Local-First](https://github.com/wantzjt/palantir-aip-local-first)
@@ -92,7 +106,7 @@ governance controls, and launch paths.
 - [TARX Desktop public releases](https://github.com/tarx-ai/tarx-desktop/releases)
 - [TARX system integrity](https://github.com/tarx-ai/tarx-desktop/blob/main/docs/SYSTEM_INTEGRITY.md)
 - [TARX security policy](https://github.com/tarx-ai/tarx-desktop/blob/main/SECURITY.md)
-- [MCP configuration standardization contribution](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/292#issuecomment-5108214148)
+- [Governed agent contracts](https://github.com/tarx-ai/governed-agent-contracts)
 - [Attribute-based Commerce Checkout](https://patents.google.com/patent/US20150278931A1/en)
 - [Multi-Device Session Identity](https://patents.google.com/patent/US20160119469/en)
 
