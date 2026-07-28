@@ -40,6 +40,9 @@ system-integrity checks.
   releases, security boundaries, and QA
 - [TARX CLI](https://github.com/tarx-ai/tarx-cli) — local runtime installation,
   health, model context, and operator commands
+- [Governed Agent Contracts](https://github.com/tarx-ai/governed-agent-contracts)
+  — portable proposal, approval, execution, and evidence schemas with
+  executable safety invariants
 - [TARX organization](https://github.com/tarx-ai) — product, runtime, and public
   technical work
 
@@ -66,6 +69,7 @@ governance controls, and launch paths.
 - [TARX Desktop public releases](https://github.com/tarx-ai/tarx-desktop/releases)
 - [TARX system integrity](https://github.com/tarx-ai/tarx-desktop/blob/main/docs/SYSTEM_INTEGRITY.md)
 - [TARX security policy](https://github.com/tarx-ai/tarx-desktop/blob/main/SECURITY.md)
+- [MCP configuration standardization contribution](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/292#issuecomment-5108214148)
 - [Attribute-based Commerce Checkout](https://patents.google.com/patent/US20150278931A1/en)
 - [Multi-Device Session Identity](https://patents.google.com/patent/US20160119469/en)
 
