@@ -46,10 +46,32 @@ system-integrity checks.
 - [TARX organization](https://github.com/tarx-ai) — product, runtime, and public
   technical work
 
+## Featured architecture: Palantir AIP × local-first AI
+
+[Palantir AIP Local-First](https://github.com/wantzjt/palantir-aip-local-first)
+is my independent, runnable reference architecture for AI systems that cross
+governed enterprise workflows, sensitive local execution, and intermittent
+connectivity.
+
+It demonstrates classification-aware policy routing, an enforceable local
+inference boundary, idempotent offline reconciliation, resilient ontology
+subscription patterns, and structured decision evidence. The implementation
+uses synthetic data, includes 11 behavior tests and CI, and defines the exact
+adapter seam where a generated TypeScript OSDK belongs.
+
+- [Read the architecture](https://github.com/wantzjt/palantir-aip-local-first/blob/main/docs/architecture.md)
+- [Read the case study](https://github.com/wantzjt/palantir-aip-local-first/blob/main/docs/case-study.md)
+- [Review the production-readiness checklist](https://github.com/wantzjt/palantir-aip-local-first/blob/main/docs/palantir-readiness.md)
+- [Inspect the tests](https://github.com/wantzjt/palantir-aip-local-first/tree/main/test)
+
+This is a community project and is not affiliated with or endorsed by Palantir
+Technologies.
+
 ## Current focus
 
 - Governed agents, permissions, approvals, and evidence-backed actions
 - Local and private AI deployment
+- Palantir-oriented enterprise AI architecture and OSDK integration boundaries
 - Enterprise search, RAG, retrieval, and source grounding
 - Model routing, memory, persistent context, and tool use
 - Evaluation systems, acceptance criteria, QA, and release validation
@@ -66,6 +88,7 @@ governance controls, and launch paths.
 
 ## Selected technical proof
 
+- [Palantir AIP × local-first reference architecture](https://github.com/wantzjt/palantir-aip-local-first)
 - [TARX Desktop public releases](https://github.com/tarx-ai/tarx-desktop/releases)
 - [TARX system integrity](https://github.com/tarx-ai/tarx-desktop/blob/main/docs/SYSTEM_INTEGRITY.md)
 - [TARX security policy](https://github.com/tarx-ai/tarx-desktop/blob/main/SECURITY.md)
