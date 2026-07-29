@@ -20,7 +20,8 @@ Supercomputer by permission.**
 
 It provides the operating layer around models and agents: persistent context,
 private memory, approved capabilities, tool execution, policy, human approval,
-model routing, and evidence.
+model routing, and evidence. The public product entry is **TARX Computer**—not
+a marketing chat wrapper and not silent cloud escalation.
 
 ```mermaid
 flowchart LR
@@ -36,42 +37,40 @@ The public Apple Silicon beta includes signed and notarized releases,
 installation verification, a local runtime bridge, security documentation, and
 system-integrity checks.
 
-- [TARX Desktop](https://github.com/tarx-ai/tarx-desktop) — public Mac beta,
-  releases, security boundaries, and QA
-- [TARX CLI](https://github.com/tarx-ai/tarx-cli) — local runtime installation,
-  health, model context, and operator commands
-- [Governed Agent Contracts](https://github.com/tarx-ai/governed-agent-contracts)
-  — portable proposal, approval, execution, and evidence schemas with
-  executable safety invariants
-- [TARX organization](https://github.com/tarx-ai) — product, runtime, and public
-  technical work
+### Public proofs (read these first)
 
-## Upstream → product proof
+1. [TARX CLI](https://github.com/tarx-ai/tarx-cli) — `tarx route check local`,
+   fail-closed remote preflight, and multi-host MCP install fixtures
+2. [Governed Agent Contracts](https://github.com/tarx-ai/governed-agent-contracts)
+   — portable proposal → decision → result → evidence with executable invariants
+3. [Palantir AIP × Local-First](https://github.com/wantzjt/palantir-aip-local-first)
+   — enterprise policy routing mapped to TARX Computer / private / deny
+4. [TARX Desktop](https://github.com/tarx-ai/tarx-desktop) — Apple Silicon beta,
+   Computer-canonical entry, signed releases
 
-- **Inference reliability:** contributed a fail-fast, secret-safe route preflight
-  to [NVIDIA NemoClaw Community](https://github.com/NVIDIA/nemoclaw-community/pull/72),
-  then carried the operational contract into
-  [TARX CLI](https://github.com/tarx-ai/tarx-cli/pull/2), where it is merged and
-  tested against endpoint, authentication, model, provider, response, and
-  timeout failures.
-- **MCP interoperability:** turned four-client installer behavior into a
-  [host adapter fixture corpus](https://github.com/tarx-ai/tarx-cli/pull/3) for
-  Claude Desktop, Claude Code, Cursor, and VS Code, then contributed the
-  evidence to the active
-  [MCP configuration proposal](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2633#issuecomment-5109652384).
+## Upstream systems work (inputs into TARX)
+
+Upstream contributions matter only when they become product proof:
+
+- **Inference preflight:** [NVIDIA NemoClaw Community #72](https://github.com/NVIDIA/nemoclaw-community/pull/72)
+  → shipped as [TARX CLI route check](https://github.com/tarx-ai/tarx-cli/pull/2)
+- **MCP host adapters:** [fixture corpus](https://github.com/tarx-ai/tarx-cli/pull/3)
+  → evidence on [SEP-2633](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2633#issuecomment-5109652384)
+
+NVIDIA community work is supporting systems rigor—not the product identity.
 
 ## Featured architecture: Palantir AIP × local-first AI
 
 [Palantir AIP Local-First](https://github.com/wantzjt/palantir-aip-local-first)
 is my independent, runnable reference architecture for AI systems that cross
 governed enterprise workflows, sensitive local execution, and intermittent
-connectivity.
+connectivity. It is **not affiliated with or endorsed by Palantir**.
 
 It demonstrates classification-aware policy routing, an enforceable local
 inference boundary, idempotent offline reconciliation, resilient ontology
-subscription patterns, and structured decision evidence. The implementation
-uses synthetic data, includes 11 behavior tests and CI, and defines the exact
-adapter seam where a generated TypeScript OSDK belongs.
+subscription patterns, structured decision evidence, and a bridge into TARX
+governed action contracts (proposal / decision / result). Synthetic data only;
+OSDK stays behind a clean adapter seam.
 
 - [Read the architecture](https://github.com/wantzjt/palantir-aip-local-first/blob/main/docs/architecture.md)
 - [Read the case study](https://github.com/wantzjt/palantir-aip-local-first/blob/main/docs/case-study.md)
