@@ -10,6 +10,7 @@ governance, product definition, and human-centered interaction.
 [TARX](https://tarx.com) ·
 [Download](https://tarx.com/download) ·
 [Documentation](https://docs.tarx.com) ·
+[Robotics](https://github.com/tarx-ai/tarx-robotics) ·
 [Portfolio](https://www.johnwantz.com/portfolio) ·
 [LinkedIn](https://www.linkedin.com/in/johntwantz/)
 
@@ -47,13 +48,19 @@ system-integrity checks.
    — enterprise policy routing mapped to TARX Computer / private / deny
 4. [TARX Desktop](https://github.com/tarx-ai/tarx-desktop) — Apple Silicon beta,
    Computer-canonical entry, signed releases
+5. [TARX Robotics](https://github.com/tarx-ai/tarx-robotics) — Unitree H2 Plus +
+   NVIDIA Isaac GR00T public lane, forks, and upstream contribution log
 
 ## Upstream systems work (inputs into TARX)
 
 Upstream contributions matter only when they become product proof:
 
+- **NVIDIA NemoClaw Community (merged):** [GitHub ETL opt-in #73](https://github.com/NVIDIA/nemoclaw-community/pull/73),
+  [Slack Socket Mode preflight #74](https://github.com/NVIDIA/nemoclaw-community/pull/74)
 - **Inference preflight:** [NVIDIA NemoClaw Community #72](https://github.com/NVIDIA/nemoclaw-community/pull/72)
   → shipped as [TARX CLI route check](https://github.com/tarx-ai/tarx-cli/pull/2)
+- **Isaac GR00T / GEAR-SONIC:** [NVlabs/GR00T-WholeBodyControl#258](https://github.com/NVlabs/GR00T-WholeBodyControl/pull/258)
+  — `gear_sonic[inference]` package name `gr00t` + Python 3.12 install path
 - **MCP host adapters:** [fixture corpus](https://github.com/tarx-ai/tarx-cli/pull/3)
   → evidence on [SEP-2633](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2633#issuecomment-5109652384)
 
@@ -82,6 +89,7 @@ Technologies.
 
 ## Current focus
 
+- Unitree H2 Plus + NVIDIA Isaac GR00T N1.7 (public software lane, Thor OS overlay)
 - Governed agents, permissions, approvals, and evidence-backed actions
 - Local and private AI deployment
 - Palantir-oriented enterprise AI architecture and OSDK integration boundaries
@@ -101,6 +109,7 @@ governance controls, and launch paths.
 
 ## Selected technical proof
 
+- [TARX robotics public lane](https://github.com/tarx-ai/tarx-robotics)
 - [Palantir AIP × local-first reference architecture](https://github.com/wantzjt/palantir-aip-local-first)
 - [TARX Desktop public releases](https://github.com/tarx-ai/tarx-desktop/releases)
 - [TARX system integrity](https://github.com/tarx-ai/tarx-desktop/blob/main/docs/SYSTEM_INTEGRITY.md)
@@ -114,6 +123,7 @@ governance controls, and launch paths.
 I am interested in senior roles, advisory work, and focused engagements
 involving:
 
+- Humanoid robotics software (Isaac GR00T, Unitree H2 Plus, Jetson Thor)
 - AI systems architecture and applied AI platforms
 - Enterprise AI implementation and transformation
 - Forward-deployed AI product work
